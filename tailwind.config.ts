@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+const oneToOneSpacing = Object.fromEntries(
+  Array.from({ length: 401 }, (_, index) => [`${index}`, `${index}px`]),
+);
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,8 +13,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
-        // Custom spacing with 1px ratio (1:1 instead of 1:4)
-        // p-1 = 1px, p-4 = 4px, p-16 = 16px
+        ...oneToOneSpacing,
       },
       typography: {
         // Extended typography classes
