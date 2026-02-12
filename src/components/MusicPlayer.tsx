@@ -20,17 +20,17 @@ const tracks = [
   {
     title: "Awesome Song Title",
     artist: "Amazing Artist",
-    src: "/audio/track-1.mp3",
+    src: "/track-1.mp3",
   },
   {
     title: "Safe and Sound",
     artist: "Free Music Lab",
-    src: "/audio/track-2.mp3",
+    src: "/track-2.mp3",
   },
   {
     title: "Purple Echoes",
     artist: "Luna Fields",
-    src: "/audio/track-3.mp3",
+    src: "/track-3.mp3",
   },
 ];
 
